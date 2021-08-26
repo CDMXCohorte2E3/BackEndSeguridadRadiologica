@@ -2,6 +2,7 @@ package com.radiomed.RadioMed.admin;
 
 public class Admin {
     private String name;
+ //   private String lastName;
     private String email;
     private String password;
 
