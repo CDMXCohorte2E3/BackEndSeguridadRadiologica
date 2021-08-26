@@ -1,10 +1,10 @@
-package org.generation.diez;
+package com.radiomed.RadioMed;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DiezApplicationTests {
+class RadioMedApplicationTests {
 
 	@Test
 	void contextLoads() {
