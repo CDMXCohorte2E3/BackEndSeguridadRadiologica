@@ -1,4 +1,4 @@
-package com.radiomed.RadioMed.Usuarios;
+package com.radiomed.RadioMed.usuarios;
 
 public class Usuarios {
     private String name;

@@ -1,4 +1,4 @@
-package com.radiomed.RadioMed.Usuarios;
+package com.radiomed.RadioMed.usuarios;
 
 
 import org.springframework.beans.factory.annotation.Autowired;

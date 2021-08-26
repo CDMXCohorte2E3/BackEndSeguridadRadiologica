@@ -1,8 +1,6 @@
 package com.radiomed.RadioMed.admin;
 
 
-import com.radiomed.RadioMed.Usuarios.Usuarios;
-import com.radiomed.RadioMed.Usuarios.UsuariosService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
