@@ -1,14 +1,14 @@
-package org.generation.diez;
+package com.radiomed.RadioMed;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DiezApplication {
+public class RadioMedApplication {
 
 	public static void main(String[] args) {
 
-		SpringApplication.run(DiezApplication.class, args);
+		SpringApplication.run(RadioMedApplication.class, args);
 	}//main
 
-}//class DiezAplication
+}//class
