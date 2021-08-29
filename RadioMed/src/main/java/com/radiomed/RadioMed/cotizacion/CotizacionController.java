@@ -10,6 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(path = "api/cotizacion")
+
 public class CotizacionController {
     private final CotizacionService cotizacionService;
 
