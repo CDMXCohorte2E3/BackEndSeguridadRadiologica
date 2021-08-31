@@ -42,6 +42,7 @@ public class AdminService {
         adminRepository.save(admn);
     }//addAdmin
 
+
     public void updateAdmin(Long adminId, String oldPassword, String newPassword) {
        // admin admn = adminRepository.getById(adminId);
         if (! adminRepository.existsById(adminId)) {
@@ -58,6 +59,18 @@ public class AdminService {
 
             adminRepository.save(admn);
         }//if
-    }// updateUser
+    }// updateAdmin
 
+
+    /*    public void updateAdmin(Long adminId, String username, String lastName, String email, String password) {
+        if (adminId<= lista.size()) {
+            Admin tmpEmp = lista.get(adminId.intValue()-1);
+            if (username != null) tmpEmp.setUsername(username);
+            if (lastName != null) tmpEmp.setLastname(lastName);
+            if (email != null) tmpEmp.setEmail(email);
+            if (password != null) tmpEmp.setPassword(password);
+        }//if
+    }// updateEmployee
+
+*/
 }//class AdminService

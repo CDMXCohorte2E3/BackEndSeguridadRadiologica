@@ -40,7 +40,6 @@ public class adminController {
     public void updateAdmin(@PathVariable("adminId") Long adminId,
         @RequestParam String oldPassword,
         @RequestParam String newPassword){
-
         adminService.updateAdmin(adminId, oldPassword,newPassword);
     }//updateAdmin
 
