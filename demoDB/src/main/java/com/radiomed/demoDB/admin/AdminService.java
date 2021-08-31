@@ -23,6 +23,7 @@ public class AdminService {
        // return adminRepository.getById(adminId);
         return adminRepository.findById(adminId).orElseThrow(
                 () -> new IllegalStateException("User does not exists " + adminId));
+
     }//getAdmin
 
     public void deleteAdmin(Long adminId) {

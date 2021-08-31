@@ -26,10 +26,10 @@ DROP TABLE IF EXISTS `admin`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `admin` (
   `idadministrador` int NOT NULL AUTO_INCREMENT,
-  `Nombre` varchar(45) NOT NULL,
-  `Apellidos` varchar(45) NOT NULL,
-  `Email` varchar(45) NOT NULL,
-  `Contrasena` varchar(45) NOT NULL,
+  `nombre` varchar(45) NOT NULL,
+  `apellidos` varchar(45) NOT NULL,
+  `email` varchar(45) NOT NULL,
+  `contrasena` varchar(45) NOT NULL,
   PRIMARY KEY (`idadministrador`),
   UNIQUE KEY `idAdministrador_UNIQUE` (`idadministrador`)
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb3;
@@ -164,16 +164,18 @@ DROP TABLE IF EXISTS `producto`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `producto` (
-  `idproducto` int NOT NULL,
-  `Nombre` varchar(45) DEFAULT NULL,
-  `Marca` varchar(45) DEFAULT NULL,
-  `Modelo` varchar(45) DEFAULT NULL,
-  `Precio` varchar(10) DEFAULT NULL,
-  `Descripcion` varchar(200) DEFAULT NULL,
-  `Imagen` varchar(150) DEFAULT NULL,
-  `Categoria` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`idproducto`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+  `idproducto` int NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(45) DEFAULT NULL,
+  `marca` varchar(45) DEFAULT NULL,
+  `modelo` varchar(45) DEFAULT NULL,
+  `precio` varchar(10) DEFAULT NULL,
+  `descripcion` varchar(200) DEFAULT NULL,
+  `imagen` varchar(150) DEFAULT NULL,
+  `categoria` varchar(45) DEFAULT NULL,
+  `status` tinyint DEFAULT NULL,
+  PRIMARY KEY (`idproducto`),
+  UNIQUE KEY `idproducto_UNIQUE` (`idproducto`)
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -182,7 +184,7 @@ CREATE TABLE `producto` (
 
 LOCK TABLES `producto` WRITE;
 /*!40000 ALTER TABLE `producto` DISABLE KEYS */;
-INSERT INTO `producto` VALUES (1,'Mandil emplomado económico','Marca Slim Royal','E6995','$2904.90','0.5 mm de plomo | 66x95cm | Con bolsillo | Acabado textil','.\\img\\products\\img-product1.jpg','Mandiles'),(2,'Mandil emplomado estándar','Marca Slim Royal','S6995','$3646.65','0.5 mm de plomo | 66x95cm | Con bolsillo | acabado plástico','.\\img\\products\\img-product2.jpg','Mandiles'),(3,'Faldón emplomado','Marca Slim Royal','SQUARE','$1443.25','0.5 mm de plomo | 40x40cm | Tipo falda','.\\img\\products\\img-product3.jpg','Mandiles'),(4,'Lentes emplomados','Marca Slim Royal','SS-53','$2873.71',' 0.75 mm de plomo | Con estuche','.\\img\\products\\img-product4.jpg','Lentes'),(5,'Lentes emplomados premium','Marca Slim Royal','S-53','$3403.08',' 0.5 mm de plomo | Con estuche','.\\img\\products\\img-product5.jpg','Lentes'),(6,'Googles emplomados','Marca Slim Royal','GOOGLE-HO','$6344.55',' 0.5 mm de plomo | Con bolsa de tela','.\\img\\products\\img-product6.jpg','Lentes'),(7,'Guantes emplomados','Marca Slim Royal','100 M/L','$2911.80',' 0.5 mm de plomo | 350 mm de largo | Tamaño mediano o grande','.\\img\\products\\img-product7.jpg','Guantes'),(8,'Guantes emplomados','Marca Shielding','XR47','$2637.53',' Modelo RADIAXON | Equivalente a 0.5 mm de plomo | Solo bajo pedido','.\\img\\products\\img-product8.jpg','Guantes'),(9,'Collarín emplomado','Marca Slim Royal','STANDARD-05','$767.96',' 0.5 mm de plomo','.\\img\\products\\img-product9.jpg','Collarines'),(10,'Collarín emplomado de lujo','Marca Slim Royal','DELUX-O5','$1045.49',' 0.5 mm de plomo','.\\img\\products\\img-product10.jpg','Collarines'),(11,'Protectores de gónadas','Marca Slim Royal','S806A','$1618.35','0.5 mm de plomo | Juego de 3 protectores: | grande, mediano y chico','.\\img\\products\\img-product11.jpg','Protectores de gónadas'),(12,'Protectores de gónadas','Marca Slim Royal','S806 M/L','$635.24',' 0.5mm de plomo | Una pieza | Tamaño mediano o grande','.\\img\\products\\img-product12.jpg','Protectores de gónadas');
+INSERT INTO `producto` VALUES (1,'Mandil emplomado económico','Marca Slim Royal','E6995','$2904.90','0.5 mm de plomo | 66x95cm | Con bolsillo | Acabado textil','.\\img\\products\\img-product1.jpg','Mandiles',1),(2,'Mandil emplomado estándar','Marca Slim Royal','S6995','$3646.65','0.5 mm de plomo | 66x95cm | Con bolsillo | acabado plástico','.\\img\\products\\img-product2.jpg','Mandiles',1),(3,'Faldón emplomado','Marca Slim Royal','SQUARE','$1443.25','0.5 mm de plomo | 40x40cm | Tipo falda','.\\img\\products\\img-product3.jpg','Mandiles',1),(4,'Lentes emplomados','Marca Slim Royal','SS-53','$2873.71',' 0.75 mm de plomo | Con estuche','.\\img\\products\\img-product4.jpg','Lentes',1),(5,'Lentes emplomados premium','Marca Slim Royal','S-53','$3403.08',' 0.5 mm de plomo | Con estuche','.\\img\\products\\img-product5.jpg','Lentes',1),(6,'Googles emplomados','Marca Slim Royal','GOOGLE-HO','$6344.55',' 0.5 mm de plomo | Con bolsa de tela','.\\img\\products\\img-product6.jpg','Lentes',1),(7,'Guantes emplomados','Marca Slim Royal','100 M/L','$2911.80',' 0.5 mm de plomo | 350 mm de largo | Tamaño mediano o grande','.\\img\\products\\img-product7.jpg','Guantes',1),(8,'Guantes emplomados','Marca Shielding','XR47','$2637.53',' Modelo RADIAXON | Equivalente a 0.5 mm de plomo | Solo bajo pedido','.\\img\\products\\img-product8.jpg','Guantes',1),(9,'Collarín emplomado','Marca Slim Royal','STANDARD-05','$767.96',' 0.5 mm de plomo','.\\img\\products\\img-product9.jpg','Collarines',1),(10,'Collarín emplomado de lujo','Marca Slim Royal','DELUX-O5','$1045.49',' 0.5 mm de plomo','.\\img\\products\\img-product10.jpg','Collarines',1),(11,'Protectores de gónadas','Marca Slim Royal','S806A','$1618.35','0.5 mm de plomo | Juego de 3 protectores: | grande, mediano y chico','.\\img\\products\\img-product11.jpg','Protectores de gónadas',1),(12,'Protectores de gónadas','Marca Slim Royal','S806 M/L','$635.24',' 0.5mm de plomo | Una pieza | Tamaño mediano o grande','.\\img\\products\\img-product12.jpg','Protectores de gónadas',1);
 /*!40000 ALTER TABLE `producto` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -223,15 +225,16 @@ DROP TABLE IF EXISTS `usuario`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `usuario` (
-  `idusuario` int NOT NULL,
-  `Nombre` varchar(100) DEFAULT NULL,
-  `Apellidos` varchar(45) DEFAULT NULL,
-  `Email` varchar(45) DEFAULT NULL,
-  `Teléfono` varchar(15) DEFAULT NULL,
-  `Contrasena` varchar(45) DEFAULT NULL,
+  `idusuario` int NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(100) DEFAULT NULL,
+  `apellidos` varchar(45) DEFAULT NULL,
+  `email` varchar(45) DEFAULT NULL,
+  `telefono` varchar(15) DEFAULT NULL,
+  `contrasena` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`idusuario`),
+  UNIQUE KEY `idusuario_UNIQUE` (`idusuario`),
   KEY `fk_Usuario_Orden1_idx` (`idusuario`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -243,10 +246,6 @@ LOCK TABLES `usuario` WRITE;
 INSERT INTO `usuario` VALUES (1,'Fabiola','León','correo@gmail.com','562482045','RadioMed_03'),(2,'Daniel','Pérez','correo@gmail.com','562482045','RadioMed_03'),(3,'Hugo ','Zamora','correo@gmail.com','562482045','RadioMed_03'),(4,'América ','Sánchez ','correo@gmail.com','562482045','RadioMed_03'),(5,'Alejandra ','Alpuche','correo@gmail.com','562482045','RadioMed_03');
 /*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 UNLOCK TABLES;
-
---
--- Dumping routines for database 'radiomed_database'
---
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -257,4 +256,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-08-30 12:48:52
+-- Dump completed on 2021-08-30 20:23:10

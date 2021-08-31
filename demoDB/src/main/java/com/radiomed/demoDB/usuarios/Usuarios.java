@@ -11,15 +11,15 @@ public class Usuarios {
     @Basic(optional = false)
     @Column(name="idusuario", unique = true, nullable = false)
     private Long id;
-    @Column(name="Nombre", nullable = false)
+    @Column(name="nombre", nullable = false)
     private String name;
-    @Column(name="Apellidos", nullable = false)
+    @Column(name="apellidos", nullable = false)
     private String lastName;
-    @Column(name="Email", nullable = false)
+    @Column(name="email", nullable = false)
     private String email;
-    @Column(name = "Telefono", nullable = false)
+    @Column(name = "telefono", nullable = false)
     private String phone;
-    @Column(name="Contrasena", nullable = false)
+    @Column(name="contrasena", nullable = false)
     private String password;
 
     public Usuarios(){}//default
