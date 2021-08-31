@@ -222,7 +222,7 @@ INSERT INTO `producto` VALUES
 (5,'Lentes emplomados premium','Marca Slim Royal','S-53','$3403.08',' 0.5 mm de plomo | Con estuche','.\img\products\img-product5.jpg','Lentes',1),
 (6,'Googles emplomados','Marca Slim Royal','GOOGLE-HO','$6344.55',' 0.5 mm de plomo | Con bolsa de tela','.\img\products\img-product6.jpg','Lentes',1),
 (7,'Guantes emplomados','Marca Slim Royal','100 M/L','$2911.80',' 0.5 mm de plomo | 350 mm de largo | Tamaño mediano o grande','.\img\products\img-product7.jpg','Guantes',1),
-(8,'Guantes emplomados','Marca Shielding','XR47','$2637.53',' Modelo RADIAXON | Equivalente a 0.5 mm de plomo | Solo bajo pedido','.\img\\products\img-product8.jpg','Guantes',1),
+(8,'Guantes emplomados','Marca Shielding','XR47','$2637.53',' Modelo RADIAXON | Equivalente a 0.5 mm de plomo | Solo bajo pedido','.\img\products\img-product8.jpg','Guantes',1),
 (9,'Collarín emplomado','Marca Slim Royal','STANDARD-05','$767.96',' 0.5 mm de plomo','.\img\products\img-product9.jpg','Collarines',1),
 (10,'Collarín emplomado de lujo','Marca Slim Royal','DELUX-O5','$1045.49',' 0.5 mm de plomo','.\img\products\img-product10.jpg','Collarines',1),
 (11,'Protectores de gónadas','Marca Slim Royal','S806A','$1618.35','0.5 mm de plomo | Juego de 3 protectores: | grande, mediano y chico','.\img\products\img-product11.jpg','Protectores de gónadas',1),
