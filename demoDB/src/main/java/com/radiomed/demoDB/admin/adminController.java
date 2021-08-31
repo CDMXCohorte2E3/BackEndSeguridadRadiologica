@@ -43,5 +43,4 @@ public class adminController {
         adminService.updateAdmin(adminId, oldPassword,newPassword);
     }//updateAdmin
 
-
 }//adminController
