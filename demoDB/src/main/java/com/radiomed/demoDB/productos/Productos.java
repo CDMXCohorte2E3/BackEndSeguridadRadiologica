@@ -22,8 +22,10 @@ public class Productos { //Plain Old Java Object "POJO"
     private String description;
     @Column (name = "status", nullable = false)
     private boolean status;
+    @Column (name = "imagen", nullable = false)
+    private String image;
 
-    public Productos(long id, String title, String brand, String model, String price, String description, boolean status) {
+    public Productos(long id, String title, String brand, String model, String price, String description, boolean status, String image) {
         this.id = id;
         this.title = title;
         this.brand = brand;
@@ -31,6 +33,7 @@ public class Productos { //Plain Old Java Object "POJO"
         this.price = price;
         this.description = description;
         this.status = status;
+        this.image = image;
     }//constructor
 
     //Necesario
@@ -92,6 +95,14 @@ public class Productos { //Plain Old Java Object "POJO"
         this.status = status;
     }//setStatus
 
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
     @Override
     public String toString() {
         return "Productos{" +
@@ -102,6 +113,7 @@ public class Productos { //Plain Old Java Object "POJO"
                 ", price='" + price + '\'' +
                 ", description='" + description + '\'' +
                 ", status=" + status +
+                ", image='" + image + '\'' +
                 '}';
     }
 }

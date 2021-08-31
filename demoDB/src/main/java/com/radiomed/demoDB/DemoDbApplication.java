@@ -18,9 +18,8 @@ public class DemoDbApplication {
 		FilterRegistrationBean<JwtFilter> registrationBean =
 				new FilterRegistrationBean<>();
 		registrationBean.setFilter(new JwtFilter());
-		registrationBean.addUrlPatterns("/api/*");
+		registrationBean.addUrlPatterns("/api/usuarios/");
 		return registrationBean;
 	}	//jwtFilter
-
 
 }//DemoDbApplication
