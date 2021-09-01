@@ -75,13 +75,12 @@ function anadirProducto(productos){
 // Función boton pop up
 /*
 const botonClase = document.getElementsByClassName("btn-add-car");
-console.log(botonClase)
+
 for(i=0 ; i < 12 ; i++){
   
   botonClase[i].addEventListener('click', function(e){
     e.preventDefault();
-    console.log(i)
-    console.log("Boton")
+    
       new Swal({
         icon: 'success',
         title: 'AGREGADO AL CARRITO',

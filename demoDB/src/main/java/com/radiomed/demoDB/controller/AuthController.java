@@ -1,6 +1,5 @@
 package com.radiomed.demoDB.controller;
 
-
 import com.radiomed.demoDB.JwtFilter.LoginData;
 import com.radiomed.demoDB.JwtFilter.Token;
 import com.radiomed.demoDB.usuarios.Usuarios;
@@ -22,33 +21,24 @@ public class AuthController {
 
     public final UsuariosRepository usuariosRepository;
 
-    private final UsuariosService usuariosService;
+    //private final UsuariosService usuariosService;
 
     public AuthController(UsuariosRepository usuariosRepository, UsuariosService usuariosService) {
         this.usuariosRepository = usuariosRepository;
-        this.usuariosService = usuariosService;
+        //this.usuariosService = usuariosService;
     }//constructor
 
     @PostMapping("/login")
-    public Token login(@RequestBody LoginData data) throws ServletException {
-        Optional<Usuarios> validateEmail = usuariosRepository.findUserByEmail(data.getEmail());
-
-        if(validateEmail.isPresent() ){
-            System.out.println(validateEmail);
-        }
-        throw new IllegalStateException("Invalid login. Please check your credentials.");
-//        Optional<LoginData> validatePassword = usuariosRepository.findUserByE(data.getEmail());
-
-        //        if () &&
-
-//                (data.getPassword().equals("RadioMed_03"))) {
-//
-//            return new Token(generateToken(data.getUsername()));
-//        }//if
-
-
-
-    }//login
+    public Token login (@RequestBody LoginData data) throws ServletException {
+        Optional<Usuarios> userByName = usuariosRepository.findUserByEmail(data.getEmail());
+        if (userByName.isPresent()) {
+            if ( (data.getEmail().equals(userByName.get().getEmail())) &&
+                    (data.getPassword().equals(userByName.get().getPassword()) ) ){
+                return new Token( generateToken(data.getEmail()) );
+            }// if getUserName && getPassword
+        } //if isPresent
+        throw new ServletException("Invalid login. Please check your credentials.");
+    }// login
 
     private String generateToken( String email)  {
         Calendar calendar = Calendar.getInstance();
@@ -58,6 +48,5 @@ public class AuthController {
         return Jwts.builder().setSubject( email ).claim( "role", "user" ).setIssuedAt( new Date() ).setExpiration(
                 calendar.getTime() ).signWith( SignatureAlgorithm.HS256, secret ).compact();
     }//generateToken
-
 
 }//class

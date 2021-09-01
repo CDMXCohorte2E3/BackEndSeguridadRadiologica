@@ -217,10 +217,9 @@ function habilitarDeshabilitar(json){
       function deshabilita(e){
         e.preventDefault();
         //let numProductos = e.target.id.split("_")[1]; //trae el id del producto
-        console.log(identi)
         
         let statusLS = JSON.parse(window.localStorage.getItem("productosLocalS"))
-        console.log(statusLS[identi-1].status)
+        
         statusLS[identi-1].status = false;
       
         window.localStorage.setItem("productosLocalS",JSON.stringify(statusLS)) // Reenvío la información a la base de datos
@@ -231,17 +230,17 @@ function habilitarDeshabilitar(json){
     }else if(status == false){
       buton.innerHTML = btnHabilita;
       let butonhabilita = document.getElementById("habilita"+json[i].id);
-      //console.log(json[i].id)
+      
       let identi=json[i].id;
       butonhabilita.addEventListener("click", habilita);
 
       function habilita(e){
         e.preventDefault();
         //let numProductos = e.target.id.split("_")[1]; //trae el id del producto
-        console.log(identi)
+        
         
         let statusLS = JSON.parse(window.localStorage.getItem("productosLocalS"))
-        console.log(statusLS[identi-1].status)
+        
         statusLS[identi-1].status = true;
       
         window.localStorage.setItem("productosLocalS",JSON.stringify(statusLS)) // Reenvío la información a la base de datos

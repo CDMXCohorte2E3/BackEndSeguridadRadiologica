@@ -39,7 +39,7 @@ public class Usuarios {
         this.email = email;
         this.phone = phone;
         this.password = password;
-    }
+    }//constructorTest
 
     public Long getId() {
         return id;

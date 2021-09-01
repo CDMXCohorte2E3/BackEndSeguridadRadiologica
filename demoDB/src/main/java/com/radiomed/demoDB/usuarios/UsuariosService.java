@@ -1,5 +1,6 @@
 package com.radiomed.demoDB.usuarios;
 
+import com.radiomed.demoDB.JwtFilter.LoginData;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -24,7 +25,7 @@ public class UsuariosService {
         return usuariosRepository.findById(usuarioId).orElseThrow(
                 () -> new IllegalStateException("User does not exist" + usuarioId)
         );
-    }
+    }//getUsuario
 
     public void deleteUsuario(Long usuarioId){
         if(usuariosRepository.existsById(usuarioId)){

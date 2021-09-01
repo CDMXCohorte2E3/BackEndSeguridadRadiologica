@@ -18,7 +18,7 @@ if (window.localStorage.getItem("subtotales") != null) {
                 let ordenIndividual = `
                <tr>
                 <td scope="row"> ${listaProductos[orden.identificador-1].title} </td>
-                <td> ${orden.subtotal} </td>
+                <td> ${orden.subtotal.toFixed(2)} </td>
                 <br>
                 </tr>
                 `
@@ -27,7 +27,7 @@ if (window.localStorage.getItem("subtotales") != null) {
         }) // Fin de forEach
 
         tablaCompras.innerHTML = ordenes;
-        totalTabla.innerHTML += "$" + totalValor;
+        totalTabla.innerHTML += "$" + totalValor.toFixed(2);
 
     }
     cargarPedidos();
