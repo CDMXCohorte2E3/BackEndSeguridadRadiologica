@@ -13,6 +13,7 @@ public class DemoDbApplication {
 		SpringApplication.run(DemoDbApplication.class, args);
 	}// main
 
+	/*
 	@Bean
 	public FilterRegistrationBean<JwtFilter> jwtFilter(){
 		FilterRegistrationBean<JwtFilter> registrationBean =
@@ -21,5 +22,6 @@ public class DemoDbApplication {
 		registrationBean.addUrlPatterns("/api/usuarios/");
 		return registrationBean;
 	}	//jwtFilter
+*/
 
 }//DemoDbApplication
