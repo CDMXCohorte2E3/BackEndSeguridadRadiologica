@@ -30,13 +30,8 @@ public class AuthController {
     }//constructor
 
     @PostMapping("/login")
-    public Token login(@RequestBody LoginData data) throws ServletException {
-        Optional<Usuarios> validateEmail = usuariosRepository.findUserByEmail(data.getEmail());
-
-        if(validateEmail.isPresent() ){
-            System.out.println(validateEmail);
-        }
-        throw new IllegalStateException("Invalid login. Please check your credentials.");
+    public void login(@RequestBody LoginData data) {
+        usuariosService.validateUsuario(data);
 //        Optional<LoginData> validatePassword = usuariosRepository.findUserByE(data.getEmail());
 
         //        if () &&
@@ -45,9 +40,6 @@ public class AuthController {
 //
 //            return new Token(generateToken(data.getUsername()));
 //        }//if
-
-
-
     }//login
 
     private String generateToken( String email)  {
