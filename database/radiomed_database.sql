@@ -184,21 +184,7 @@ CREATE TABLE `producto` (
 
 LOCK TABLES `producto` WRITE;
 /*!40000 ALTER TABLE `producto` DISABLE KEYS */;
-
-INSERT INTO `producto` VALUES 
-(1,'Mandil emplomado económico','Marca Slim Royal','E6995','$2904.90','0.5 mm de plomo | 66x95cm | Con bolsillo | Acabado textil','./img/products/img-product_1.jpg','Mandiles',1),
-(2,'Mandil emplomado estándar','Marca Slim Royal','S6995','$3646.65','0.5 mm de plomo | 66x95cm | Con bolsillo | acabado plástico','./img/products/img-product_2.jpg','Mandiles',1),
-(3,'Faldón emplomado','Marca Slim Royal','SQUARE','$1443.25','0.5 mm de plomo | 40x40cm | Tipo falda','./img/products/img-product_3.jpg','Mandiles',1),
-(4,'Lentes emplomados','Marca Slim Royal','SS-53','$2873.71',' 0.75 mm de plomo | Con estuche','./img/products/img-product_4.jpg','Lentes',1),
-(5,'Lentes emplomados premium','Marca Slim Royal','S-53','$3403.08',' 0.5 mm de plomo | Con estuche','./img/products/img-product_5.jpg','Lentes',1),
-(6,'Googles emplomados','Marca Slim Royal','GOOGLE-HO','$6344.55',' 0.5 mm de plomo | Con bolsa de tela','./img/products/img-product_6.jpg','Lentes',1),
-(7,'Guantes emplomados','Marca Slim Royal','100 M/L','$2911.80',' 0.5 mm de plomo | 350 mm de largo | Tamaño mediano o grande','./img/products/img-product_7.jpg','Guantes',1),
-(8,'Guantes emplomados','Marca Shielding','XR47','$2637.53',' Modelo RADIAXON | Equivalente a 0.5 mm de plomo | Solo bajo pedido','./img/products/img-product_8.jpg','Guantes',1),
-(9,'Collarín emplomado','Marca Slim Royal','STANDARD-05','$767.96',' 0.5 mm de plomo','./img/products/img-product_9.jpg','Collarines',1),
-(10,'Collarín emplomado de lujo','Marca Slim Royal','DELUX-O5','$1045.49',' 0.5 mm de plomo','./img/products/img-product_10.jpg','Collarines',1),
-(11,'Protectores de gónadas','Marca Slim Royal','S806A','$1618.35','0.5 mm de plomo | Juego de 3 protectores: | grande, mediano y chico','./img/products/img-product_11.jpg','Protectores de gónadas',1),
-(12,'Protectores de gónadas','Marca Slim Royal','S806 M/L','$635.24',' 0.5mm de plomo | Una pieza | Tamaño mediano o grande','./img/products/img-product_12.jpg','Protectores de gónadas',1);
-
+INSERT INTO `producto` VALUES (1,'Mandil emplomado económico','Marca Slim Royal','E6995','$2904.90','0.5 mm de plomo | 66x95cm | Con bolsillo | Acabado textil','./img/products/img-product_1.jpg','Mandiles',1),(2,'Mandil emplomado estándar','Marca Slim Royal','S6995','$3646.65','0.5 mm de plomo | 66x95cm | Con bolsillo | acabado plástico','./img/products/img-product_2.jpg','Mandiles',1),(3,'Faldón emplomado','Marca Slim Royal','SQUARE','$1443.25','0.5 mm de plomo | 40x40cm | Tipo falda','./img/products/img-product_3.jpg','Mandiles',1),(4,'Lentes emplomados','Marca Slim Royal','SS-53','$2873.71',' 0.75 mm de plomo | Con estuche','./img/products/img-product_4.jpg','Lentes',1),(5,'Lentes emplomados premium','Marca Slim Royal','S-53','$3403.08',' 0.5 mm de plomo | Con estuche','./img/products/img-product_5.jpg','Lentes',1),(6,'Googles emplomados','Marca Slim Royal','GOOGLE-HO','$6344.55',' 0.5 mm de plomo | Con bolsa de tela','./img/products/img-product_6.jpg','Lentes',1),(7,'Guantes emplomados','Marca Slim Royal','100 M/L','$2911.80',' 0.5 mm de plomo | 350 mm de largo | Tamaño mediano o grande','./img/products/img-product_7.jpg','Guantes',1),(8,'Guantes emplomados','Marca Shielding','XR47','$2637.53',' Modelo RADIAXON | Equivalente a 0.5 mm de plomo | Solo bajo pedido','./img/products/img-product_8.jpg','Guantes',1),(9,'Collarín emplomado','Marca Slim Royal','STANDARD-05','$767.96',' 0.5 mm de plomo','./img/products/img-product_9.jpg','Collarines',1),(10,'Collarín emplomado de lujo','Marca Slim Royal','DELUX-O5','$1045.49',' 0.5 mm de plomo','./img/products/img-product_10.jpg','Collarines',1),(11,'Protectores de gónadas','Marca Slim Royal','S806A','$1618.35','0.5 mm de plomo | Juego de 3 protectores: | grande, mediano y chico','./img/products/img-product_11.jpg','Protectores de gónadas',1),(12,'Protectores de gónadas','Marca Slim Royal','S806 M/L','$635.24',' 0.5mm de plomo | Una pieza | Tamaño mediano o grande','./img/products/img-product_12.jpg','Protectores de gónadas',1);
 /*!40000 ALTER TABLE `producto` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -257,7 +243,7 @@ CREATE TABLE `usuario` (
 
 LOCK TABLES `usuario` WRITE;
 /*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
-INSERT INTO `usuario` VALUES (1,'Fabiola','León','correo@gmail.com','562482045','RadioMed_03'),(2,'Daniel','Pérez','correo@gmail.com','562482045','RadioMed_03'),(3,'Hugo ','Zamora','correo@gmail.com','562482045','RadioMed_03'),(4,'América ','Sánchez ','correo@gmail.com','562482045','RadioMed_03'),(5,'Alejandra ','Alpuche','correo@gmail.com','562482045','RadioMed_03');
+INSERT INTO `usuario` VALUES (1,'Fabiola','León','correo1@gmail.com','562482045','RadioMed_03'),(2,'Daniel','Pérez','correo2@gmail.com','562482045','RadioMed_03'),(3,'Hugo ','Zamora','correo3@gmail.com','562482045','RadioMed_03'),(4,'América ','Sánchez ','correo4@gmail.com','562482045','RadioMed_03'),(5,'Alejandra ','Alpuche','correo5@gmail.com','562482045','RadioMed_03');
 /*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -270,4 +256,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-08-31 17:33:57
+-- Dump completed on 2021-08-31 20:48:37

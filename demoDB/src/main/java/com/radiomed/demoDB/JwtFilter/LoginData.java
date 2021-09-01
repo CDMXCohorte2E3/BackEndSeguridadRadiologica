@@ -1,16 +1,16 @@
 package com.radiomed.demoDB.JwtFilter;
 
 public class LoginData {
-    private final String username;
+    private final String email;
     private final String password;
 
-    public LoginData(String username, String password) {
-        this.username = username;
+    public LoginData(String email, String password) {
+        this.email = email;
         this.password = password;
     }//constructor
 
-    public String getUsername() {
-        return username;
+    public String getEmail() {
+        return email;
     }//getUsername
 
     public String getPassword() {
