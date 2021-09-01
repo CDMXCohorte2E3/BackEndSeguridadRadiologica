@@ -1,0 +1,23 @@
+{
+  "name": "seguridadradiologica",
+  "version": "1.0.0",
+  "description": "RadioMed es una empresa mexicana especializada en servicios de capacitación y asesoría en protección y seguridad radiológica para diagnóstico médico con rayos X. Nuestro personal cuenta con autorización de Asesor Especializado en Seguridad Radiológica avalada por la COFEPRIS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CDMXCohorte2E3/SeguridadRadiologica.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CDMXCohorte2E3/SeguridadRadiologica/issues"
+  },
+  "homepage": "https://github.com/CDMXCohorte2E3/SeguridadRadiologica#readme",
+  "dependencies": {
+    "@sweetalert2/theme-bulma": "^5.0.2",
+    "sweetalert2": "^11.0.20"
+  }
+}
