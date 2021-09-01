@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo/logo.svg">
+
+    <!-- Font families-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@900&display=swap"
+        rel="stylesheet">
+
+    <!-- Hojas de estilo-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/main.css">
+
+    <script src="./sweetalert2/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="./@sweetalert2/theme-bulma/bulma.css">
+
+
+    <title>RadioMed | Inicio de Sesión</title>
+</head>
+
+<body>
+    <!--Nav bar -->
+    <div class="container-fluid barra-navegacion" style="padding:0%">
+        <div class="nav-blue-bar">
+            <!-- <nav class="navbar navbar-light navbar-body-background"> -->
+            <nav class="navbar navbar-expand-lg navbar-light navbar-body-background">
+                <a class="navbar-brand" href="index.html">
+                    <!-- Inserto el logo de la empresa-->
+                    <img src="./img/logo/logo-horizontal.svg" width="170" class="d-inline-block align-top"
+                        alt="Radiomed Seguridad y protección radiológica en diagnóstico médico">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <!--Button responsivo hamburger-->
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--Button responsivo hamburger-->
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <!--menú hamburgesa-->
+                    <ul class="navbar-nav ml-auto nav-ba">
+                        <li class="nav-item mr-5">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item mr-5">
+                            <a class="nav-link collapse navbar-collapse" href="acercaDe.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item mr-5">
+                            <a class="nav-link " href="productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item mr-5">
+                            <a class="nav-link " href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item mr-5">
+                            <a class="nav-link " href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item mr-5">
+                            <a class="nav-link" href="iniciarSesion.html">
+                                <img src="./img/icons/icons-user-azul.svg" class="navbar-img-icon">
+                            </a>
+                        </li>
+                        <li class="nav-item mr-5">
+                            <a class="nav-link" href="carritoCompras.html">
+                                <img src="./img/icons/icons-shopping-cart.svg" class="navbar-img-icon">
+                            </a>
+                        </li>
+                    </ul><!-- Termina el ul de los links-->
+                </div>
+                <!--menú hamburgesa-->
+
+            </nav>
+        </div> <!-- Termina el navbar principal -->
+    </div> <!-- Termina el container fluid, hora de alinear todo-->
+    <!--Nav bar -->
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-12 col-12">
+
+                <h1>BIENVENIDO ADMINISTRADOR</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--Formulario registro-->
+    <div class="div-centered col-6">
+        <form id="needs-validation" novalidate>
+            <div class="form-group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" class="form-control" id="emailIniciar" maxlength="40" required>
+                <div class="invalid-feedback">
+                    E-mail válido es requerido
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" class="form-control" id="passwordIniciar">
+                    <div class="invalid-feedback">
+                        Contraseña válida es requerida: Debe contener mínimo 6 caracteres, al menos 1 número, al menos 1
+                        mayúscula, al menos 1 caracter especial.
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="text-center" id="botonEnviar">
+                <!-- <button type="submit" class="btn btn-info" onclick="Toast()">Enviar</button> -->
+              <button type="submit" class="btn btn-info">Enviar</button>
+            </div>
+        </form>
+    </div>
+    <!--Formulario de registro-->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-white footer-background-black">
+        <br />
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4">
+                        <!-- RadioMed -->
+                        <h6 class="footer-title-txt">RadioMed</h6>
+                        <p style="margin-top: auto;"><a href="./contacto.html" class="footer-link-txt">Contáctanos</a>
+                        </p>
+                        <p><a href="./acercaDe.html" class="footer-link-txt">Nosotros</a> </p>
+                        <p><a href="./iniciarSesion.html" class="footer-link-txt">Ingresar</a></p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4">
+                        <!-- Catálogo -->
+                        <h6 class="footer-title-txt">Catálogo</h6>
+                        <p style="margin-top: auto;"><a href="./productos.html" class="footer-link-txt">Productos</a>
+                        </p>
+                        <p><a href="./servicios.html" class="footer-link-txt">Servicios</a></p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4">
+                        <!-- Contacto -->
+                        <h6 class="footer-title-txt">Contacto</h6>
+                        <div class="footer-contacto">
+                            <p><a href="#!" class="footer-link-txt"> <img src="./img/icons/icons-mail.svg"
+                                        class="footer-img-icon">radiomed.contacto@gmail.com</a></p>
+                            <p><a href="#!" class="footer-link-txt"> <img src="./img/icons/icons-whastapp.svg"
+                                        class="footer-img-icon">56 1490
+                                    3815</a></p>
+                            <p><a href="https://www.facebook.com/RadioMedPR" class="footer-link-txt"> <img
+                                        src="./img/icons/icons-FB.svg" class="footer-img-icon">/RadioMedRP</a></p>
+                        </div>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3 footer-link-copyright" style="background-color: rgba(0, 0, 0, 0.2)">
+            COPYRIGHT © RADIOMED 2021
+            <div class="text-right" style="text-align: right;">AVISO DE PRIVACIDAD</div>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="./js/iniciarSesionAdmin.js"></script>
+
+
+</body>
+<!-- radiomed.asesores@gmail.com 
+    radiomed.contacto@gmail.com
+    RadioMed_01
+ -->
+</html>
