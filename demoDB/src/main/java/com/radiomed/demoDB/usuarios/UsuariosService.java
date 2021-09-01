@@ -43,19 +43,6 @@ public class UsuariosService {
         usuariosRepository.save(usuarios);
     }//addUsuarios
 
-    public List validateUsuario(LoginData usuarios) {
-        Optional<Usuarios> validateEmail = usuariosRepository.findUserByEmail(usuarios.getEmail());
-        if(validateEmail.isPresent() ){
-            System.out.println(validateEmail);
-            String password = usuarios.getPassword();
-            System.out.println(password);
-           return validateEmail.get();
-        }else{
-            throw new IllegalStateException("Invalid login. Please check your credentials.");
-        }//else
-
-    }//validateUsuario
-
     public void updateUsuario(Long userId, String oldPassword, String newPassword) {
         if (! usuariosRepository.existsById(userId)) {
             throw new IllegalStateException("User does not exist " + userId);

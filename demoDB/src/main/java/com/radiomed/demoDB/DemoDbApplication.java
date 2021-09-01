@@ -8,20 +8,17 @@ import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 public class DemoDbApplication {
-
 	public static void main(String[] args) {
 		SpringApplication.run(DemoDbApplication.class, args);
 	}// main
 
-	/*
 	@Bean
 	public FilterRegistrationBean<JwtFilter> jwtFilter(){
 		FilterRegistrationBean<JwtFilter> registrationBean =
 				new FilterRegistrationBean<>();
 		registrationBean.setFilter(new JwtFilter());
-		registrationBean.addUrlPatterns("/api/usuarios/");
+		registrationBean.addUrlPatterns("/api/admin/");
 		return registrationBean;
 	}	//jwtFilter
-*/
 
 }//DemoDbApplication
