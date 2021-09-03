@@ -100,4 +100,16 @@ public class Cotizacion {
                 '}';
     }//toString
 
+    /*
+    public class DetalleCotizacion {
+        public Long  detalleCotizacionId;
+        public Long cotizacionId;
+        public Long idServicio;
+  }//DetalleCotizacion
+     */
+
+
+
+
+
 }//class Cotizacion

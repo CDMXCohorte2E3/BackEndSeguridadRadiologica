@@ -1,6 +1,8 @@
 package com.radiomed.RadioMed.productos;
 
-import com.radiomed.RadioMed.Usuarios.Usuarios;
+
+import com.radiomed.RadioMed.usuarios.Usuarios;
+
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
